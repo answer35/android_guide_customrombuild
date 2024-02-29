@@ -14,12 +14,12 @@ If you already have these:
 
 # Steps:
 
-1. [**Set Up a Build Environment**](https://github.com/AtlanPrime/customromguide/blob/master/steps/StepOne.md)
-2. [**Downloading a ROM Source**](https://github.com/AtlanPrime/customromguide/blob/master/steps/StepTwo.md)
-3. [**Know your Device sources aka Tree**](https://github.com/AtlanPrime/customromguide/blob/master/steps/StepThree.md)
-4. [**Basic Bringup and Sync device source**](https://github.com/AtlanPrime/customromguide/blob/master/steps/StepFour.md)
-5. [**Lets build it!**](https://github.com/AtlanPrime/customromguide/blob/master/steps/StepFive.md)
-6. [**Upload to SourceForge**](https://github.com/AtlanPrime/customromguide/blob/master/steps/SourceforgeUpload.md)
+1. [**Set Up a Build Environment**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepOne.md)
+2. [**Downloading a ROM Source**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepTwo.md)
+3. [**Know your Device sources aka Tree**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepThree.md)
+4. [**Basic Bringup and Sync device source**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepFour.md)
+5. [**Lets build it!**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepFive.md)
+6. [**Upload to SourceForge**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/SourceforgeUpload.md)
 
 
 With Love, 
