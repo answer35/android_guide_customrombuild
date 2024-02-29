@@ -7,6 +7,11 @@ Instructions to build are pretty straight and most of the time it's specified in
 ```bash
 . build/envsetup.sh
 ```
+* Build flag can be set up using the export command if it is not configured in the device tree.
+
+```bash
+export WITH_GMS=true
+```
 
 * Now we need to lunch
 
