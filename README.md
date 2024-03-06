@@ -19,8 +19,10 @@ If you already have these:
 3. [**Know your Device sources aka Tree**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepThree.md)
 4. [**Basic Bringup and Sync device source**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepFour.md)
 5. [**Lets build it!**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/StepFive.md)
-6. [**Upload to SourceForge**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/SourceforgeUpload.md)
+6. [**Download from SSH connection**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/SshDirectDownload.md)
+7. [**Upload to SourceForge**](https://github.com/answer35/android_guide_customrombuild/blob/patch-1/steps/SourceforgeUpload.md)
 
 
 With Love, 
-@AtlanPrime
+@answer35
+Forked from @AtlanPrime
