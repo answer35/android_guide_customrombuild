@@ -4,38 +4,59 @@
 
 
 ```bash
-# get superuser access.
-sudo su
 
-# install JDK 
-add-apt-repository ppa:openjdk-r/ppa
+#First update/upgrade of hte new virtual machine
+sudo apt update
+sudo apt -y upgrade
 
-# update all packages.
-apt-get update
+#Install Python 3.7
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
+sudo apt install -y python3.7
 
-# install Java packages.
-apt-get install git-core gnupg flex bison build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+#Install Git
+sudo apt install git-core
 
-# become a normal user.
-exit
+#Install SSHPass if needed
+sudo apt install sshpass
 
-# creating a bin folder and setting up AkhilNarang Script.
+#Configure Git
+git config --global user.email $email
+git config --global user.name "$username"
 
-mkdir ~/bin
+#Configure SSHPass
+ssh $sfusername@frs.sourceforge.net
 
-PATH=~/bin:$PATH
-
-cd ~/bin
-
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-
-chmod a+x ~/bin/repo
-
-git clone https://github.com/akhilnarang/scripts.git scripts
-
+#Install all components required for building environement (Thanks to Akhil Narang <me@akhilnarang.dev>)
+git clone https://github.com/akhilnarang/scripts
 cd scripts
+sudo bash setup/android_build_env.sh
 
-bash setup/android_build_env.sh
+#Configuring swap for building
+
+#Checking the System for Swap Information
+sudo swapon --show
+free -h
+
+#Checking Available Space on the Hard Drive Partition
+df -h
+
+#Creating a Swap File
+sudo fallocate -l 16G /swapfile
+ls -lh /swapfile
+
+#Enabling the Swap File
+sudo chmod 600 /swapfile
+ls -lh /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+free -h
+
+#Making the Swap File Permanent
+sudo cp /etc/fstab /etc/fstab.bak
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
 
 * B) The AOSP way to do..
